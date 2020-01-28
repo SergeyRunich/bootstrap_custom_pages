@@ -203,6 +203,7 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
   position: relative; }
   .search-bar.w-search {
     width: 500px;
+    border-radius: .25rem;
     min-height: 70px;
     background-color: #494c62; }
   .search-bar .form-group {
@@ -507,7 +508,6 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
 }
 .ui-block-content-referrals form{
   position: relative;
-  width: 100% !important;
   max-width: 100% !important;
 }
 .jobStatus{
@@ -3360,7 +3360,7 @@ select.form-control {
 .form-group.with-button button {
   display: block;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 0;
   height: 100%;
   width: 35px;
@@ -17045,4 +17045,46 @@ Build date: 2018-12-12 00:07:25
 }
 .insightsTableInnerBtn{
   text-align: center;
+}
+.searchRow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchRow form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50% !important;
+  min-height: 35px !important;
+  height: 35px;
+  margin-left:25%;
+}
+.searchRow form div{
+  width: 100%;
+  height: 35px !important;
+}
+.profileSeparator{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e6ecf5;
+    margin: 0px 0 20px 0;
+}
+.btnLabel{
+  margin-bottom: 15px;
+  position: relative;
+  color: #515365;
+  background-color: #e6ecf5;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: .812rem;
+  line-height: 1.5;
+  border-radius: .25rem;
 }
